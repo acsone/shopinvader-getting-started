@@ -4,7 +4,7 @@ services:
     volumes:
       - mongodb:/data/db
   locomotive:
-    image: quay.io/shopinvader/locomotive-shopinvader-demo:V4.0.x-20190924-1709
+    image: quay.io/shopinvader/locomotive-shopinvader-demo:V4.0.x-20190928-1609
     environment:
       - VIRTUAL_HOST=locomotive-shopinvader-demo.dy
       - VIRTUAL_PORT=3000
