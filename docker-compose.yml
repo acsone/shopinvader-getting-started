@@ -4,7 +4,7 @@ services:
     volumes:
       - mongodb:/data/db
   locomotive:
-    image: quay.io/shopinvader/locomotive-shopinvader-demo:v4.0.x-latest
+    image: quay.io/shopinvader/locomotive-shopinvader-demo:V4.0.x-20190924-1709
     environment:
       - VIRTUAL_HOST=locomotive-shopinvader-demo.dy
       - VIRTUAL_PORT=3000
@@ -81,7 +81,7 @@ services:
     ports:
       - 8080:8080
   wagon:
-    image: quay.io/akretion/shopinvader-wagon:latest
+    image: quay.io/shopinvader/wagon:v4.0.x-20190919
     ports:
       - 3333:3333
     volumes:
